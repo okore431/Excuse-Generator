@@ -1,7 +1,7 @@
 window.onload = () => {
   //write your code here
 
-  function generateExcuse() {
+  function generateExcuse () {
 
   let who = ['The cat','My husband','His dog','My bird'];
   let action = ['ate','run','jumped','broke', 'hypnotized'];
