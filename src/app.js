@@ -1,3 +1,4 @@
+
 window.onload = () => {
   //write your code here
 
@@ -7,13 +8,15 @@ window.onload = () => {
   let action = ['ate','run','jumped','broke', 'hypnotized'];
   let what = ['my nugget', 'the fish', 'his iguana'];
   let when = ['after party','at brunch time','when I slept','during the hike','before zumba class'];
+  let time = ['at five', 'at four', 'at one'];
     
-  let whoIndex = Math.floor(Math.random() * who.length);
-  let actionIndex = Math.floor(Math.random()  * action.length);
-  let whatIndex = Math.floor(Math.random() * what.length);
-  let whenIndex = Math.floor(Math.random() * when.length);
+  function randomIndex (arr) {
+
+    let arrIndex = Math.floor(Math.random()* arr.length);
+    return arr [arrIndex];
+  }
  
-  let excuse = who[whoIndex] +' '+ action[actionIndex] +' '+ what[whatIndex] +' '+ when[whenIndex] +'.';
+  let excuse = randomIndex (who) +' '+ randomIndex (action) +' '+ randomIndex (what) +' '+ randomIndex (when) +' '+ randomIndex (time) + '.';
     
   return excuse;
   };
